@@ -1,7 +1,10 @@
 # AI Document Evals Demo
 
-Production-grade B2B contract extraction pipeline with **calibrated confidence scoring**, **automated human-in-the-loop triage gates**, and **deterministic regression benchmarks**.
+[![CI & Regression Evals](https://github.com/sushanth-dev/ai-document-evals-demo/actions/workflows/evals.yml/badge.svg)](https://github.com/sushanth-dev/ai-document-evals-demo/actions/workflows/evals.yml)
+![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
+Production-grade B2B contract extraction pipeline with **calibrated confidence scoring**, **automated human-in-the-loop triage gates**, and **deterministic regression benchmarks**.
 ---
 
 ## The Problem
@@ -48,6 +51,8 @@ Raw Contract (PDF / Text)
 
 ## Benchmark Results
 
+
+![Benchmark Run Terminal Output](assets/benchmark.svg)
 Evaluated across 10 synthetic commercial contract fixtures:
 
 | Metric | Score | Target |

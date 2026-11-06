@@ -87,10 +87,9 @@ def run_evaluation(fixtures_dir: str, ground_truth_path: str) -> dict[str, Any]:
     }
 
 
-def print_report(summary: dict[str, Any]) -> None:
-    """Print formatted terminal report using rich tables."""
-    console = Console()
-
+def print_report(summary: dict[str, Any], export_svg_path: str | None = None) -> None:
+    """Print formatted terminal report using rich tables and optionally export SVG."""
+    console = Console(record=bool(export_svg_path), width=110)
     table = Table(title="Contract Extraction Benchmark Results", header_style="bold magenta")
     table.add_column("Fixture Document", style="cyan", width=32)
     table.add_column("Confidence", justify="right", width=12)
@@ -133,6 +132,9 @@ def print_report(summary: dict[str, Any]) -> None:
     console.print(summary_table)
     console.print()
 
+    if export_svg_path:
+        os.makedirs(os.path.dirname(os.path.abspath(export_svg_path)), exist_ok=True)
+        console.save_svg(export_svg_path, title="ai-document-evals-demo benchmark")
 
 if __name__ == "__main__":
     base_dir = os.path.dirname(__file__)
@@ -140,4 +142,5 @@ if __name__ == "__main__":
     truth = os.path.join(base_dir, "..", "fixtures", "ground_truth.json")
 
     results = run_evaluation(fixtures, truth)
-    print_report(results)
+    svg_path = os.path.join(base_dir, "..", "assets", "benchmark.svg")
+    print_report(results, export_svg_path=svg_path)
