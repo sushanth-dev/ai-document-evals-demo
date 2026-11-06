@@ -40,15 +40,17 @@ def _extract_vendor(raw_text: str) -> tuple[str | None, str | None]:
         return name, name
 
     # Match: Vendor:\s*Name
-    m2 = re.search(r'Vendor:\s*([A-Za-z0-9\s.,&]+?)(?:\.|\n|$)', raw_text, re.IGNORECASE)
+    m2 = re.search(r'Vendor:\s*([^\n\r]+)', raw_text, re.IGNORECASE)
     if m2:
-        name = m2.group(1).strip()
+        raw_val = m2.group(1).strip().rstrip(".")
+        name = re.sub(r'\s*\([\"\']?(?:Vendor|Provider)[\"\']?\)\s*$', '', raw_val, flags=re.IGNORECASE).strip()
         return name, name
 
-    # Match: Party of the first part: Name
-    m3 = re.search(r'(?:Provider|Contractor):\s*([A-Za-z0-9\s.,&]+?)(?:\.|\n|$)', raw_text, re.IGNORECASE)
+    # Match: Provider / Contractor
+    m3 = re.search(r'(?:Provider|Contractor):\s*([^\n\r]+)', raw_text, re.IGNORECASE)
     if m3:
-        name = m3.group(1).strip()
+        raw_val = m3.group(1).strip().rstrip(".")
+        name = re.sub(r'\s*\([\"\']?(?:Vendor|Provider|Contractor)[\"\']?\)\s*$', '', raw_val, flags=re.IGNORECASE).strip()
         return name, name
 
     return None, None

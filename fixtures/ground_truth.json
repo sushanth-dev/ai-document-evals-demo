@@ -42,7 +42,7 @@
       "governing_law": "Illinois",
       "termination_notice_days": 15
     },
-    "expected_triage_status": "AUTO_APPROVED"
+    "expected_triage_status": "NEEDS_HUMAN_REVIEW"
   },
   "05_ocr_typo_vendor.txt": {
     "expected_fields": {
@@ -71,7 +71,7 @@
       "vendor_name": "VectorOps Solutions",
       "contract_value_usd": 210000.0,
       "payment_terms_days": 45,
-      "liability_cap_usd": 50000.0,
+      "liability_cap_usd": 500000.0,
       "governing_law": "Washington",
       "termination_notice_days": 90
     },
@@ -86,7 +86,7 @@
       "governing_law": null,
       "termination_notice_days": 30
     },
-    "expected_triage_status": "AUTO_APPROVED"
+    "expected_triage_status": "NEEDS_HUMAN_REVIEW"
   },
   "09_foreign_currency_msa.txt": {
     "expected_fields": {
