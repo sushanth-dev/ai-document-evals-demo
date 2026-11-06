@@ -1,0 +1,113 @@
+{
+  "01_clean_standard_msa.txt": {
+    "expected_fields": {
+      "vendor_name": "Summit Analytics Inc.",
+      "contract_value_usd": 120000.0,
+      "payment_terms_days": 30,
+      "liability_cap_usd": 300000.0,
+      "governing_law": "Delaware",
+      "termination_notice_days": 60
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  },
+  "02_missing_termination.txt": {
+    "expected_fields": {
+      "vendor_name": "QuickDev Software LLC",
+      "contract_value_usd": 45000.0,
+      "payment_terms_days": 30,
+      "liability_cap_usd": 100000.0,
+      "governing_law": "New York",
+      "termination_notice_days": null
+    },
+    "expected_triage_status": "NEEDS_HUMAN_REVIEW"
+  },
+  "03_ambiguous_payment_terms.txt": {
+    "expected_fields": {
+      "vendor_name": "Strategic AI Partners",
+      "contract_value_usd": 60000.0,
+      "payment_terms_days": null,
+      "liability_cap_usd": 120000.0,
+      "governing_law": "Texas",
+      "termination_notice_days": 30
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  },
+  "04_contradictory_dates.txt": {
+    "expected_fields": {
+      "vendor_name": "CloudFront Systems",
+      "effective_date": null,
+      "contract_value_usd": 35000.0,
+      "payment_terms_days": 30,
+      "liability_cap_usd": 50000.0,
+      "governing_law": "Illinois",
+      "termination_notice_days": 15
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  },
+  "05_ocr_typo_vendor.txt": {
+    "expected_fields": {
+      "vendor_name": "DataPulse Tech LLC",
+      "contract_value_usd": 95000.0,
+      "payment_terms_days": 30,
+      "liability_cap_usd": 200000.0,
+      "governing_law": "Massachusetts",
+      "termination_notice_days": 60
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  },
+  "06_extreme_liability_cap.txt": {
+    "expected_fields": {
+      "vendor_name": "NexaCloud Corp",
+      "contract_value_usd": 180000.0,
+      "payment_terms_days": 30,
+      "liability_cap_usd": null,
+      "governing_law": "Virginia",
+      "termination_notice_days": 30
+    },
+    "expected_triage_status": "NEEDS_HUMAN_REVIEW"
+  },
+  "07_multi_page_spans.txt": {
+    "expected_fields": {
+      "vendor_name": "VectorOps Solutions",
+      "contract_value_usd": 210000.0,
+      "payment_terms_days": 45,
+      "liability_cap_usd": 50000.0,
+      "governing_law": "Washington",
+      "termination_notice_days": 90
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  },
+  "08_missing_governing_law.txt": {
+    "expected_fields": {
+      "vendor_name": "CyberShield LLC",
+      "contract_value_usd": 75000.0,
+      "payment_terms_days": 30,
+      "liability_cap_usd": 150000.0,
+      "governing_law": null,
+      "termination_notice_days": 30
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  },
+  "09_foreign_currency_msa.txt": {
+    "expected_fields": {
+      "vendor_name": "EuroCloud GmbH",
+      "contract_value_usd": 130000.0,
+      "payment_terms_days": 30,
+      "liability_cap_usd": 250000.0,
+      "governing_law": "New York",
+      "termination_notice_days": 60
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  },
+  "10_zero_dollar_nda.txt": {
+    "expected_fields": {
+      "vendor_name": "OpenCore AI",
+      "contract_value_usd": 0.0,
+      "payment_terms_days": null,
+      "liability_cap_usd": 10000.0,
+      "governing_law": "Delaware",
+      "termination_notice_days": 30
+    },
+    "expected_triage_status": "AUTO_APPROVED"
+  }
+}

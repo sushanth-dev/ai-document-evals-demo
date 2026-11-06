@@ -1,0 +1,20 @@
+PROFESSIONAL SERVICES CONTRACT
+
+This Professional Services Contract is dated November 01, 2026,
+by and between QuickDev Software LLC ("Vendor") and Alpha Retailers ("Customer").
+
+1. SCOPE OF WORK
+Development of inventory synchronization microservices.
+
+2. FEES AND PAYMENT
+Contract compensation shall be $45,000. Customer agrees to pay within 30 days of invoice receipt.
+
+3. LIABILITY LIMITS
+The maximum liability of either party shall be limited to $100,000.
+
+4. DURATION
+This agreement remains effective until all deliverables are completed.
+(Note: No clause for termination notice period or voluntary termination without cause).
+
+5. JURISDICTION
+This contract is governed by the laws of New York.

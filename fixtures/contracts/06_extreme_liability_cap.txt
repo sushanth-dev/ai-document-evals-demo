@@ -1,0 +1,19 @@
+INFRASTRUCTURE SUPPORT CONTRACT
+
+Effective Date: 2026-11-05.
+By and between NexaCloud Corp ("Vendor") and FinSecure Inc ("Customer").
+
+1. SCOPE
+24/7 reliability monitoring.
+
+2. COMPENSATION
+Total contract sum of $180,000. Invoices payable within 30 days.
+
+3. LIABILITY
+No limitation of liability is agreed between the parties. Unlimited damages apply.
+
+4. TERMINATION
+Either party may terminate upon thirty (30) days notice.
+
+5. GOVERNING LAW
+Laws of Virginia.

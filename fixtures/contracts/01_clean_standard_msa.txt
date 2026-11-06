@@ -1,0 +1,20 @@
+MASTER SERVICES AGREEMENT
+
+This Master Services Agreement ("Agreement") is entered into on October 01, 2026,
+by and between Summit Analytics Inc. ("Vendor") and Horizon Global Corp ("Customer").
+
+1. SERVICES AND DELIVERABLES
+Vendor agrees to provide data engineering and analytical integration services.
+
+2. COMPENSATION AND INVOICING
+Customer shall pay Vendor a total contract sum of $120,000 USD.
+Invoices shall be payable within thirty (30) days from invoice date (Net 30).
+
+3. LIMITATION OF LIABILITY
+IN NO EVENT SHALL EITHER PARTY'S AGGREGATE LIABILITY UNDER THIS AGREEMENT EXCEED $300,000 USD.
+
+4. TERM AND TERMINATION
+Either party may terminate this Agreement without cause upon sixty (60) days prior written notice.
+
+5. GOVERNING LAW
+This Agreement shall be governed by and construed under the laws of Delaware.

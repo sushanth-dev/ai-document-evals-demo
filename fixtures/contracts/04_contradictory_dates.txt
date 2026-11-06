@@ -1,0 +1,13 @@
+STATEMENT OF WORK
+
+Vendor: CloudFront Systems ("Vendor")
+Client: Zeta Media
+
+Summary of engagement:
+Contract value of $35,000 for serverless migration.
+Payment terms: payable within 30 days.
+Liability limited to $50,000.
+Termination: either party upon 15 days written notice.
+Governing law: laws of Illinois.
+
+Signature block dates omitted and effective date not stated.

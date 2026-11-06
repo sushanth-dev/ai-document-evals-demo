@@ -1,0 +1,19 @@
+SOFTWARE LICENSE AND SUPPORT AGREEMENT
+
+Dated October 20, 2026.
+Entered into by and between DataPulse Tech LLC ("Vendor") and Omnicorp ("Customer").
+
+1. LICENSED SOFTWARE
+Enterprise license for stream analytics.
+
+2. FEES
+Contract sum of $95,000. Customer shall pay within 30 days.
+
+3. LIABILITY CAP
+Total liability under this agreement shall be limited to $200,000.
+
+4. TERMINATION NOTICE
+Termination allowed upon sixty (60) days prior notice.
+
+5. GOVERNING LAW
+Construed according to the laws of Massachusetts.

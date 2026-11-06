@@ -1,0 +1,19 @@
+MUTUAL NON-DISCLOSURE AGREEMENT
+
+Effective Date: 2026-11-01.
+By and between OpenCore AI ("Vendor") and Partner Ventures ("Customer").
+
+1. PURPOSE
+Evaluation of potential technical integration.
+
+2. FINANCIAL CONSIDERATION
+The parties agree to no monetary compensation ($0) for this mutual disclosure.
+
+3. CONFIDENTIALITY PERIOD AND TERMINATION
+Either party may terminate discussions upon 30 days written notice.
+
+4. LIMITATION OF LIABILITY
+Neither party's liability under this NDA shall exceed $10,000.
+
+5. GOVERNING LAW
+Laws of Delaware.

@@ -1,0 +1,21 @@
+CONSULTING AGREEMENT
+
+This Consulting Agreement is entered into on September 15, 2026,
+by and between Strategic AI Partners ("Vendor") and Beta Logistics ("Customer").
+
+1. ENGAGEMENT
+Strategic advisory on agentic automation deployments.
+
+2. PAYMENT TERMS
+Customer agrees to pay a total contract value of $60,000.
+Payments shall be released upon mutually agreed subjective project milestones.
+(No specific Net days or numeric schedule is fixed herein).
+
+3. LIABILITY
+Neither party's total liability shall exceed $120,000.
+
+4. TERMINATION
+Either party may terminate upon 30 days written notice.
+
+5. LAW
+Governed by the laws of Texas.
