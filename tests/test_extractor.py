@@ -57,3 +57,10 @@ def test_extract_and_score_defective_triggers_triage():
 def test_extract_text_from_file_missing():
     with pytest.raises(FileNotFoundError):
         extract_text_from_file("non_existent_file.txt")
+
+
+def test_extract_text_from_file_invalid_pdf_magic(tmp_path):
+    fake_pdf = tmp_path / "corrupt_contract.pdf"
+    fake_pdf.write_bytes(b"NOT_A_REAL_PDF_HEADER")
+    with pytest.raises(ValueError, match="Invalid PDF header signature"):
+        extract_text_from_file(str(fake_pdf))

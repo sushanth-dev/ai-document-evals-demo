@@ -12,12 +12,20 @@ from src.scorer import score_field, compute_overall_confidence
 from src.triage import evaluate_triage
 
 
+PDF_MAGIC: bytes = b"%PDF"
+
+
 def extract_text_from_file(file_path: str) -> str:
-    """Extract plain text from a text file or PDF document."""
+    """Extract plain text from a text file or PDF document with magic number verification."""
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"File not found: {file_path}")
 
+    with open(file_path, "rb") as f:
+        header = f.read(4)
+
     if file_path.lower().endswith(".pdf"):
+        if not header.startswith(PDF_MAGIC):
+            raise ValueError(f"Invalid PDF header signature: expected b'%PDF', got {header!r}")
         import pdfplumber
 
         text_pages: list[str] = []
@@ -30,7 +38,6 @@ def extract_text_from_file(file_path: str) -> str:
 
     with open(file_path, "r", encoding="utf-8") as f:
         return f.read()
-
 
 def _extract_vendor(raw_text: str) -> tuple[str | None, str | None]:
     # Match patterns like: between Acme Corp ("Vendor")
